@@ -16,4 +16,12 @@ $color-text: #FFFDD0;
 }
 
 
+header {
+  background-color: $color-background;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
