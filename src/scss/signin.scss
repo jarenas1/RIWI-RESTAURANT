@@ -7,6 +7,8 @@ $color-secondary: #F5F5DC;
 $color-accent: #6B8E23;
 $color-background: #8B4513;
 $color-text: #FFFDD0;
+$black:#000000;   
+$light-pink: #e47894;
 
 *{
     margin: 0px;
@@ -21,14 +23,55 @@ body{
 
 h1{
     color: $color-text;
-    margin-top: 15vh;
+    margin-top: 10vh;
     font-size: 60px;
     font-weight: bold;
 }
 section{
-    form{
+
+    form{ 
+        border-radius: 30px;
+        margin-top: 7vh;
+        height: 550px;
+        background-color: $color-text;
+        width: 600px;
+        gap: 50px;
+
+        img{
+            width: 75%;
+        }
+
         input{
-            width: 20%;
+            border-radius: 15px;
+            padding-left: 15px;
+            width: 65%;
+            height: 40px;
+            border: 2px solid $color-secondary;
+        }
+
+        button{
+            width: 130px;
+            height: 40px;
+            border-radius: 15px;
+            background-color: $color-primary;
+            border: $color-background;
+            color:$black ;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all .15s ease-in-out;
+
+            &:hover{
+                font-size: 19px;
+                background-color: $light-pink;
+            }
+        }  
+        a{
+            text-decoration: none;
+            color: $black;
+
+            span{
+                color: blue;
+            }
         }
     }
 }
