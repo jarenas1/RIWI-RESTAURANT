@@ -13,46 +13,71 @@ $color-nav: #1E3A5F;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: $color-secondary;
+
 }
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
 
-header {
-  background-color: $color-nav; 
+.container12 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 160px;
+}
+
+.container1 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.hero {
+
+  background: url('https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?cs=srgb&dl=pexels-pixabay-262978.jpg&fm=jpg') no-repeat center center/cover;
   color: #fff;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .logo img {
-  height: 50px;
-  background-color: $color-nav;
-}
-
-header .admin-info {
-  flex-grow: 1;
   text-align: center;
-  background-color: $color-nav;
-  
+  padding: 5rem 0;
+  margin-top: 40px; /* To avoid overlap with the fixed header */
 }
 
-header .admin-info p {
- 
-  background-color: $color-nav;
-  
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
 }
 
-header .logout button {
-  background-color:$color-nav;
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.btn1 {
+  background-color: #333;
   color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-header .logout button:hover {
-  
-  background-color: $color-nav;
+.btn1:hover {
+  background-color: #555;
+}
+
+#contacto {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
 }

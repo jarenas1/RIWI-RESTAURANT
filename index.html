@@ -4,22 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riwi Restaurant</title>
-    <script type="module" src="./src/js/main.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="/"><img src="https://logos-world.net/wp-content/uploads/2023/05/Aquaman-Logo.png" alt="Hotel Logo"></a>
-        </div>       
-        <div class="admin-info">
-            <p>RIWI RESTAURANT</p>
+        <nav class="navbar navbar-expand-lg fixed-top pe-2 bg-light">
+            <div class="container-fluid">
+        
+            <img class="ms-5" style="width: 90px" src="../../public/img/logoRiwi.webp" alt="Logo de riwi">
+        
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse " id="navbar-start">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="../../index.html" class="nav-link ">Home</a></li>
+                    <div class="grid gap-6">
+                    <button type="button" class="btn btn-outline-primary"><a href="signin.html" class="nav-link ">Sign-in</a></button>
+                    <button type="button" class="btn btn-outline-primary"><a href="signup.html" class="nav-link ">sign-up</a></button>
+                    </div>
+                </ul>
+                </div>
+            </div>
+        </nav>
+      </header>
+
+      <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Bienvenidos a Nuestro Restaurante</h2>
+                <p>Disfruta de una experiencia culinaria única con nuestros platos gourmet.</p>
+                <a href="./src/pages/menu.html" class="btn1">Ver Menú</a>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="container12">
+                <h2>Contacto</h2>
+                <p>¿Tienes alguna pregunta? No dudes en ponerte en contacto con nosotros.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container1">
+            <p>&copy; 2024 Restaurante Riwi. Todos los derechos reservados.</p>
         </div>
-        <div class="logout">
-            <a href=""><button class="btnRegister" id="login">Sign in</button></a>
-        </div>
-        <div class="logout">
-            <a href=""><button class="btnRegister" id="register">Sign out</button></a>
-        </div>
-    </header> 
+    </footer>
+      
+    
+    
+    <script type="module" src="./src/js/main.js"></script>
 </body>
 </html>
