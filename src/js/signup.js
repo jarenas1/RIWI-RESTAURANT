@@ -22,6 +22,7 @@ async function checkEmail(email) {
     if (data.length === 0) {
         return true;
     }else{
+        alert("The email is already registered")
         return false;
     }
 }
@@ -40,14 +41,14 @@ function checkPaswords(password,confirmPassword){
 async function add(name,email,password){
     await fetch("http://localhost:3000/users",{
         method: "POST",
-        headers: {
-            'Content-Type': 'application/json'
-        },
         body: JSON.stringify({ //create the object that will be added to the database, remind pass it to jJSON
-            name: name.value,
+            name: name.value.toUpperCase(),
             email: email.value,
             password: password.value
         }),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
     })
 }
 
@@ -57,7 +58,7 @@ async function add(name,email,password){
 
 //check if the passwords has +8 characters to dont let continue
 function checkPasswordLength(password) {
-   if(password.length > 8){
+   if(password.value.length > 8){
     return true;
    }else{
     return false;
@@ -76,10 +77,10 @@ password.addEventListener("input",(event)=>{
 
 //form event
 
-form.addEventListener("submit",(event)=>{
+form.addEventListener("submit", async (event)=>{
 event.preventDefault();
 
-if (checkPasswordLength(password)&&checkPaswords(password,confirmPassword)&&(checkEmail(email))){
+if (checkPasswordLength(password)===true&&checkPaswords(password,confirmPassword)===true&&(await checkEmail(email)===true)){
     add(name,email,password);
     alert("User created successfully");
     form.reset();
