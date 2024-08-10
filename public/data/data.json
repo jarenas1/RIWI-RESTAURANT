@@ -1,0 +1,144 @@
+{
+    "desayuno": [
+    {
+    "id": 1,
+    "nombre": "Tostadas Francesas",
+    "descripcion": "Tostadas de pan empapadas en huevo y leche, servidas con sirope de arce.",
+    "precio": 5.99,
+    "img": "https://imag.bonviveur.com/tostadas-francesas-servidas-en-el-plato.jpg"
+    },
+    {
+    "id": 2,
+    "nombre": "Huevos Revueltos",
+    "descripcion": "Huevos revueltos con queso cheddar y cebollas verdes.",
+    "precio": 4.99,
+    "img": "https://imag.bonviveur.com/fotografia-de-unos-huevos-revueltos.jpg"
+    },
+    {
+    "id": 3,
+    "nombre": "Panqueques",
+    "descripcion": "Panqueques esponjosos servidos con mantequilla y jarabe de arce.",
+    "precio": 6.49,
+    "img": "https://www.bancodealimentoschicago.org/wp-content/uploads/2023/08/pancakes-900x600-1.jpg"
+    },
+    {
+    "id": 4,
+    "nombre": "Yogur con Granola",
+    "descripcion": "Yogur natural con granola crujiente y frutas frescas.",
+    "precio": 3.99,
+    "img": "https://s1.abcstatics.com/abc/www/multimedia/bienestar/2024/02/24/yogur-2-kQxD-U601362345904zsD-1200x840@diario_abc.JPG"
+    },
+    {
+    "id": 5,
+    "nombre": "Burrito de Desayuno",
+    "descripcion": "Tortilla de harina rellena de huevos, tocino y queso.",
+    "precio": 7.49,
+    "img": "https://www.daisybrand.com/wp-content/uploads/2019/12/BREAKFAST-BURRITOS-770x628.jpg"
+    },
+    {
+    "id": 6,
+    "nombre": "Sándwich de Pavo",
+    "descripcion": "Sándwich de pavo con lechuga, tomate y mayonesa en pan integral.",
+    "precio": 6.99,
+    "img": "https://storage.googleapis.com/avena-recipes/agtzfmF2ZW5hLWJvdHIZCxIMSW50ZXJjb21Vc2VyGICAoILvw_0JDA/30-11-2020/1606709202921.jpeg"
+    },
+    {
+    "id": 7,
+    "nombre": "Ensalada César",
+    "descripcion": "Ensalada con lechuga romana, crutones, queso parmesano y aderezo César.",
+    "precio": 7.49,
+    "img": "https://www.gourmet.cl/wp-content/uploads/2016/09/Ensalada_C%C3%A9sar-web-553x458.jpg"
+    },
+    {
+    "id": 8,
+    "nombre": "Hamburguesa Clásica",
+    "descripcion": "Hamburguesa de carne de res con lechuga, tomate, cebolla y ketchup.",
+    "precio": 8.99,
+    "img": "https://assets.unileversolutions.com/recipes-v2/218401.jpg"
+    },
+    {
+    "id": 9,
+    "nombre": "Tacos de Pollo",
+    "descripcion": "Tacos rellenos de pollo sazonado, con cebolla y cilantro.",
+    "precio": 7.99,
+    "img": "https://assets.unileversolutions.com/recipes-v2/234572.jpg"
+    },
+    {
+    "id": 10,
+    "nombre": "Sopa de Lentejas",
+    "descripcion": "Sopa casera de lentejas con verduras frescas.",
+    "precio": 5.49,
+    "img": "https://assets.epicurious.com/photos/63ceae6fd2744b6f0cb02154/1:1/w_3983,h_3983,c_limit/SopaDeLentejas_RECIPE_012023_46046.jpg"
+    },
+    {
+    "id": 11,
+    "nombre": "Paella Valenciana",
+    "descripcion": "Arroz con mariscos, pollo, conejo y vegetales.",
+    "precio": 12.99,
+    "img": "https://img-global.cpcdn.com/recipes/recipes_123301_v1420981937_receta_foto_00123301-vowmoa2f6rq1lkyessrw/1200x630cq70/photo.jpg"
+    },
+    {
+    "id": 12,
+    "nombre": "Pizza Margarita",
+    "descripcion": "Pizza con salsa de tomate, queso mozzarella y albahaca fresca.",
+    "precio": 10.49,
+    "img": "https://assets.elgourmet.com/wp-content/uploads/2023/03/Fm5utL5Ga4fRKIMETODOS2WoqKu8CWS2apF-1024x683.png"
+    },
+    {
+    "id": 13,
+    "nombre": "Spaghetti Bolognese",
+    "descripcion": "Espaguetis con salsa boloñesa de carne de res y tomate.",
+    "precio": 11.99,
+    "img": "https://supervalu.ie/image/var/files/real-food/recipes/Uploaded-2020/spaghetti-bolognese-recipe.jpg"
+    },
+    {
+    "id": 14,
+    "nombre": "Pechuga de Pollo a la Parrilla",
+    "descripcion": "Pechuga de pollo marinada y asada a la parrilla, acompañada de vegetales.",
+    "precio": 13.49,
+    "img": "https://okdiario.com/img/2018/06/15/receta-de-pechuga-de-pollo-a-la-barbacoa-1.jpg"
+    },
+    {
+    "id": 15,
+    "nombre": "Lasagna",
+    "descripcion": "Lasagna con capas de pasta, carne, queso ricotta y salsa de tomate.",
+    "precio": 12.99,
+    "img": "https://newmansown.com/wp-content/uploads/2022/03/Homemade-lasagna.png"
+    },
+    {
+    "id": 16,
+    "nombre": "Coca-Cola",
+    "descripcion": "Refresco clásico de cola.",
+    "precio": 1.99,
+    "img": "https://www.liderlogo.es/wp-content/uploads/2023/01/coca-cola-1-1.jpg"
+    },
+    {
+    "id": 17,
+    "nombre": "Agua Mineral",
+    "descripcion": "Botella de agua mineral sin gas.",
+    "precio": 1.49,
+    "img": "https://www.elfinanciero.com.mx/resizer/NtqiIz_g0C1kbRC031ED39GBfro=/1440x810/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/elfinanciero/IA477XZSP5EYJEDS6Q6WK35VYA.jpg"
+    },
+    {
+    "id": 18,
+    "nombre": "Jugo de Naranja",
+    "descripcion": "Jugo de naranja recién exprimido.",
+    "precio": 2.49,
+    "img": "https://eurofitness.com/wp-content/uploads/2021/06/zumo-de-naranja-natural.jpg"
+    },
+    {
+    "id": 19,
+    "nombre": "Café Americano",
+    "descripcion": "Café negro hecho con granos de café tostados.",
+    "precio": 2.99,
+    "img": "https://i.blogs.es/139e0f/cafe-americano2/450_1000.jpeg"
+    },
+    {
+    "id": 20,
+    "nombre": "Té Helado",
+    "descripcion": "Té helado dulce servido con hielo.",
+    "precio": 2.29,
+    "img": "https://t1.uc.ltmcdn.com/es/posts/5/8/3/como_preparar_te_helado_15385_orig.jpg"
+    }
+]
+}
