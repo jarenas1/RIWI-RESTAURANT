@@ -5,7 +5,7 @@
 $color-primary: #E94E77;
 $color-secondary: #F5F5DC;
 $color-accent: #6B8E23;
-$color-background: #8B4513;
+$color-background: #afafaf;
 $color-text: #FFFDD0;
 $black:#000000;   
 $light-pink: #e47894;
@@ -17,12 +17,12 @@ $light-pink: #e47894;
     font-family: "Ubuntu", sans-serif;
 }
 body{
-    background-color: $color-background;
     color: $color-text;
+    background-color: $color-background;
 }
 
 h1{
-    color: $color-text;
+    color: $black;
     margin-top: 10vh;
     font-size: 60px;
     font-weight: bold;
@@ -33,7 +33,7 @@ section{
         border-radius: 30px;
         margin-top: 7vh;
         height: 550px;
-        background-color: $color-text;
+        background-color: white;
         width: 600px;
         gap: 50px;
 
