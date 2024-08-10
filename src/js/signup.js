@@ -53,14 +53,14 @@ async function add(name,email,password){
 
 
 
-//SPANS
+//SPAN
 
 //check if the passwords has +8 characters to dont let continue
 function checkPasswordLength(password) {
-   if(password.length >= 8){
+   if(password.length > 8){
     return true;
    }else{
-    alert("The password cant be less tha 9 characters")
+    return false;
    }
 }
 
@@ -71,4 +71,23 @@ password.addEventListener("input",(event)=>{
     } else {
         passwordSpan.textContent = "";
     }
+});
+
+
+//form event
+
+form.addEventListener("submit",(event)=>{
+event.preventDefault();
+
+if (checkPasswordLength(password)&&checkPaswords(password,confirmPassword)&&(checkEmail(email))){
+    add(name,email,password);
+    alert("User created successfully");
+    form.reset();
+}else if (checkPaswords(password,confirmPassword)===false){
+    alert("Passwords do not match");
+}else if (checkEmail(email)==false){
+    alert("The email is alredy registred")
+}else if (checkPasswordLength(password) === false){
+    alert("The password cant be less tha 9 characters")
+}
 })
