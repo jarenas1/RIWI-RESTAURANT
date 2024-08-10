@@ -16,7 +16,7 @@
     <title>Riwi Menu</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top pe-2">
+    <nav class="navbar navbar-expand-lg fixed-top pe-2 bg-light">
         <div class="container-fluid">
     
         <img class="ms-5" style="width: 90px" src="../../public/img/logoRiwi.webp" alt="Logo de riwi">
@@ -26,10 +26,11 @@
         </button>
             <div class="collapse navbar-collapse " id="navbar-start">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a href="/src/pages/menu.html" class="nav-link ">Carta</a></li>
+                <li class="nav-item"><a href="./src/pages/menu.html" class="nav-link ">Menu</a></li>
+                <li class="nav-item"><a href="../../index.html" class="nav-link ">Home</a></li>
                 <div class="grid gap-6">
-                <button type="button" class="btn btn-outline-primary">Sign in</button>
-                <button type="button" class="btn btn-outline-primary">Log in</button>
+                <button type="button" class="btn btn-outline-primary"><a href="/src/pages/signin" class="nav-link ">Sign in</a></button>
+                <button type="button" class="btn btn-outline-primary"><a href="/src/pages/login" class="nav-link ">Log in</a></button>
                 </div>
                 
             </ul>
@@ -40,7 +41,7 @@
 
 
     <main id="main-products">
-        <h1 class="text-center">Restaurante</h1>
+        <h1 class="text-center">Menu</h1>
         <div class="d-flex justify-content-lg-start align-items-center gap-3">
             <div class="mb-5 mt-5 ms-5 col-2">
                 <input class="form-control col-2" id="searchInput" type="search" placeholder="Buscar" aria-label="Search">
