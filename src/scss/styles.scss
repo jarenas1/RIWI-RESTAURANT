@@ -6,6 +6,7 @@ $color-secondary: #F5F5DC;
 $color-accent: #6B8E23;
 $color-background: #8B4513;
 $color-text: #FFFDD0;
+$color-nav: #1E3A5F;
 
 *{
   font-family: "Ubuntu", sans-serif;
@@ -17,7 +18,7 @@ $color-text: #FFFDD0;
 
 
 header {
-  background-color: $color-background;
+  background-color: $color-nav; 
   color: #fff;
   padding: 10px;
   display: flex;
@@ -25,13 +26,33 @@ header {
   align-items: center;
 }
 
+header .logo img {
+  height: 50px;
+  background-color: $color-nav;
+}
+
+header .admin-info {
+  flex-grow: 1;
+  text-align: center;
+  background-color: $color-nav;
+  
+}
+
+header .admin-info p {
+ 
+  background-color: $color-nav;
+  
 }
 
 header .logout button {
-  background-color: #1E3A5F;
+  background-color:$color-nav;
   color: #fff;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
 }
 
+header .logout button:hover {
+  
+  background-color: $color-nav;
+}
