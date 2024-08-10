@@ -39,6 +39,12 @@
     ```bash
    npm run dev
    ```
+ 7. **Run the JSON Server:**
+ ```bash
+npx json-server public/data/data.json
+
+npx json-server public/data/users.json
+```
 
 ## Resources
 
