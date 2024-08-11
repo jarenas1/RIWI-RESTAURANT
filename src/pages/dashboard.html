@@ -6,7 +6,73 @@
     <title>Dashboard</title>
 </head>
 <body>
-    
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top pe-2 bg-light">
+                <div class="container-fluid">
+            
+                <img class="ms-5" style="width: 90px" src="../../public/img/logoRiwi.webp" alt="Logo de riwi">
+            
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse " id="navbar-start">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="../../index.html" class="nav-link ">Home</a></li>
+                        <div class="grid gap-6">
+                        <button type="button" class="btn btn-outline-primary"><a href="../../../index.html" class="nav-link ">Log out</a></button>
+                        </div>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+          </header>
+
+          <main>
+            <section class = "first-message">
+                <p>HI, userName</p>
+                <h1>Dashboard</h1>
+            </section>
+            
+            <div class="row d-flex justify-content-center">
+                <section class="col-xl-10 col-xs-12">
+                    <h2>Menú</h2>
+
+                    <table class="table table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">description</th>
+                            <th scope="col">Picture</th>
+                            <th scope="col">Options</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@mdo</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+          </main>
     <script type="module" src="../js/dashboard.js"></script>
 </body>
 </html>

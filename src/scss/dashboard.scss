@@ -15,3 +15,27 @@ $light-pink: #e47894;
   padding: 0;
   box-sizing: border-box;
 }
+
+.first-message{
+    margin-top:12vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+
+    p{
+        font-size: 34px;
+        color: $black;
+        margin-bottom: 10px;
+    }
+    h1{
+        font-size: 50px;
+        color: $black;
+        margin-top: 5vh;
+    }
+}
+
+h2{
+  text-align: center;
+}
+
