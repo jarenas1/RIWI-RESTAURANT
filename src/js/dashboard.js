@@ -1,7 +1,8 @@
 import "../scss/dashboard.scss";
+import * as bootstrap from "bootstrap";
 
 const table = document.querySelector("#elements");
-const btnCreate = document.querySelector(".btn-succes");
+const btnCreate = document.querySelector(".btn-success");
 
 //calling data from api, to print it on the table
 
@@ -27,3 +28,14 @@ async function callingData(table){
 }
 
 callingData(table)
+
+
+//create new element
+function create(nombre,descripcion,precio,imagen) {
+    
+}
+
+
+btnCreate.addEventListener('click', function(e){
+    
+})
