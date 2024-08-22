@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top pe-2 bg-light">
+                <div class="container-fluid">
+            
+                <img class="ms-5" style="width: 90px" src="../../public/img/logoRiwi.webp" alt="Logo de riwi">
+            
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse " id="navbar-start">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="../../index.html" class="nav-link ">Home</a></li>
+                        <div class="grid gap-6">
+                        <button type="button" class="btn btn-outline-primary"><a href="../../../index.html" class="nav-link ">Log out</a></button>
+                        </div>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+          </header>
+
+          <main>
+            <section class = "first-message">
+                <p>HI, userName</p>
+                <h1>Dashboard</h1>
+            </section>
+            <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                <section class="col-xl-10 col-xs-12">
+                    <h2 class="mt-5">Menú</h2>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Create</button>
+                   
+
+                    <!------------------------------------------------------------ Modal -------------------------------------------------------->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Menú</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                            <form id="form-modal" action="" class="d-flex flex-column gap-4">
+                                <input type="text" id="name" placeholder="Name">
+                                <textarea name="description" id="description" placeholder="description" maxlength="500"></textarea>
+                                <input type="text" id="price" placeholder="Price">
+                                <input type="text" id="image" placeholder="Image url">
+                            </form>
+
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" id="btn-save" class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Picture</th>
+                            <th scope="col">Options</th>
+                        </tr>
+                        </thead>
+                        <tbody id="elements">
+                        
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+          </main>
+    <script type="module" src="../js/dashboard.js"></script>
+</body>
+</html>
