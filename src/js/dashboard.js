@@ -121,5 +121,5 @@ table.addEventListener("click", async function (e) {
 //CLOSE THE SESION FROM LOCALSTORAGE
 
 logout.addEventListener("click", function () {
-  localStorage.removeItem("token");
+  localStorage.removeItem("userOnline");
 });
