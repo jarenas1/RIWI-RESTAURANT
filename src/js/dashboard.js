@@ -11,6 +11,7 @@ const description = document.querySelector("#description");
 const price = document.querySelector("#price");
 const image = document.querySelector("#image");
 let idToUpdate = null;
+const logout = document.querySelector("#logout");
 
 //calling data from api, to print it on the table
 async function callingData(table) {
@@ -114,4 +115,11 @@ table.addEventListener("click", async function (e) {
     price.value = data.precio;
     image.value = data.img;
     }
+});
+
+
+//CLOSE THE SESION FROM LOCALSTORAGE
+
+logout.addEventListener("click", function () {
+  localStorage.removeItem("userOnline");
 });

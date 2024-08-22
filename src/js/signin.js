@@ -17,7 +17,7 @@ form.addEventListener("submit", async (event) => {
     if (user.password === password.value && user.email === email.value) { //we use user.value because user is the object that return the validateEmail                                                  //So when we put user. we can acces to the "user" values like emau, password, mail,etc
         alert("Login success"); 
         localStorage.setItem('userOnline', JSON.stringify(user)) //put the sesion in the localStorage, we need pass the user from object to json
-        window.location.href="#" //redirect the user
+        window.location.href="./dashboard.html" //redirect the user
     } 
     else {
         alert("Incorrect password");

@@ -147,5 +147,37 @@
       "img": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/sodimacCO/13846/w=1036,h=832,f=webp,fit=contain,q=85",
       "id": "09a7"
     }
+  ],
+  "users": [
+    {
+      "id": "ad23",
+      "username": "example",
+      "email": "example1@example.com",
+      "password": "123"
+    },
+    {
+      "id": "ad24",
+      "username": "example2",
+      "email": "example2@example.com",
+      "password": "456"
+    },
+    {
+      "id": "58be",
+      "name": "JUAN ARENAS",
+      "email": "karen@gmail.com",
+      "password": "111111111"
+    },
+    {
+      "id": "06c2",
+      "name": "JUAN ARENAS",
+      "email": "karen1@gmail.com",
+      "password": "111111111"
+    },
+    {
+      "id": "e05e",
+      "name": "JUAN ARENAS",
+      "email": "karen12@gmail.com",
+      "password": "111111111"
+    }
   ]
 }
