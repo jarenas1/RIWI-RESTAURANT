@@ -38,7 +38,8 @@
                     <h2 class="mt-5">Menú</h2>
                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Create</button>
                    
-                    <!-- Modal -->
+
+                    <!------------------------------------------------------------ Modal -------------------------------------------------------->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                         <div class="modal-content">
@@ -58,11 +59,12 @@
                             </div>
                             <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save</button>
+                            <button type="submit" id="btn-save" class="btn btn-primary">Save</button>
                             </div>
                         </div>
                         </div>
                     </div>
+
 
                     <table class="table table-striped">
                         <thead>
@@ -76,16 +78,7 @@
                         </tr>
                         </thead>
                         <tbody id="elements">
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Cake</td>
-                            <td class="table-desc"><p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et maiores possimus voluptatum consequatur nemo unde inventore dolores! Expedita quam itaque nulla laboriosam aut esse non eveniet rerum quaerat cumque?</p></td>
-                            <td>20.00</td>
-                            <td lass="table-desc"><img class="form-image" src="https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg" alt=""></td>
-                            <td><button id="1" type="button" class="btn btn-danger">Delete</button> 
-                                <button id="1" type="button" class="btn btn-warning">Edit</button>
-                            </td>
-                        </tr>
+                        
                         </tbody>
                     </table>
                 </section>

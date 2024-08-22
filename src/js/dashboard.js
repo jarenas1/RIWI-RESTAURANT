@@ -2,7 +2,16 @@ import "../scss/dashboard.scss";
 import * as bootstrap from "bootstrap";
 
 const table = document.querySelector("#elements");
-const btnCreate = document.querySelector(".btn-success");
+
+//modal form elements
+const save = document.querySelector("#btn-save");
+const form = document.querySelector("#form-modal");
+
+const name = document.querySelector("#name");
+const description = document.querySelector("#description");
+const price = document.querySelector("#price");
+const image = document.querySelector("#image");
+
 
 //calling data from api, to print it on the table
 
@@ -31,11 +40,29 @@ callingData(table)
 
 
 //create new element
-function create(nombre,descripcion,precio,imagen) {
+async function create(name,description,price,image) {
+    const newPlato = {
+        nombre: name.value,
+        descripcion: description.value,
+        precio: price.value,
+        img: image.value
+    };
+    
+    //send new plato to api
+    await fetch("http://localhost:3000/carta", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newPlato)
+    })
     
 }
 
 
-btnCreate.addEventListener('click', function(e){
-    
+save.addEventListener('click', async function(e){
+    e.preventDefault();
+    await create(name, description, price,image)
+    alert("Plate created successfully");
+    form.reset();
 })
