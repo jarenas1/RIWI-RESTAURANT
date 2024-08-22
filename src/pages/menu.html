@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=""/>
+    <meta name="keywords" content="">
+    <meta name="sitedomain" content= />
+    <meta name="organization" content="Riwi_gates" />
+    <meta name="author" content=" @jarenas1 @JuanGuillermoR"/>
+    <meta name="designer" content=" @jarenas1 @JuanGuillermoR/">
+    <meta name="copyright" content="© 2024Riwi Restaurant. Todos los derechos reservados">
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="revisit-after" content="15days" />
+    <title>Riwi Menu</title>
+</head>
+<body>
+  
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top pe-2 bg-light">
+        <div class="container-fluid">
+    
+        <img class="ms-5" style="width: 90px" src="../../public/img/logoRiwi.webp" alt="Logo de riwi">
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse " id="navbar-start">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a href="./src/pages/menu.html" class="nav-link ">Menu</a></li>
+                <li class="nav-item"><a href="../../index.html" class="nav-link ">Home</a></li>
+                <div class="grid gap-6">
+                <button type="button" class="btn btn-outline-primary"><a href="signin.html" class="nav-link ">Sign-in</a></button>
+                <button type="button" class="btn btn-outline-primary"><a href="signup.html" class="nav-link ">sign-up</a></button>
+                </div>
+                
+            </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+
+    <main id="main-products">
+        <h1 class="text-center">Menu</h1>
+        <div class="d-flex justify-content-lg-start align-items-center gap-3">
+            <div class="mb-5 mt-5 ms-5 col-2">
+                <input class="form-control col-2" id="searchInput" type="search" placeholder="Buscar" aria-label="Search">
+            </div>
+        </div>
+        <div class="container mt-5 ">
+            <section id="products" class="container mt-5 ">
+
+            </section>
+        </div>
+        
+        <!-- Modal detalle -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Detalle del Producto</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body mt-4 text-center">
+                  <img id="modal-img" src="" style="width: 200px; height:200px;" class="card-img-top" alt="Imagen del Producto">
+                  <h5 id="modal-name" class="card-title mt-3"></h5>
+                  <p id="modal-description" class="card-text"></p>
+                  <p id="modal-price" class="card-text"></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="../js/menu.js"></script>
+</body>
+</html>
